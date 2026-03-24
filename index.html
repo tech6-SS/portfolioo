@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Your Name</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero" id="home">
+    <div class="hero-content">
+      <h1>Hi, I’m Your Name</h1>
+      <p>Developer • Designer • Creative Problem Solver</p>
+      <a class="btn" href="#projects">View Work</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="about" class="card">
+      <h2>About Me</h2>
+      <p>I’m a full-stack developer focused on building accessible, scalable, and user-centric web experiences.</p>
+      <ul>
+        <li>JavaScript / TypeScript</li>
+        <li>React / Next.js / Node.js</li>
+        <li>Responsive UI / UX</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="card">
+      <h2>Projects</h2>
+      <div class="grid">
+        <article class="project">
+          <h3>Project One</h3>
+          <p>A web app that solves X problem with Y tech.</p>
+          <a href="#" target="_blank" rel="noopener noreferrer">Live Demo</a>
+        </article>
+        <article class="project">
+          <h3>Project Two</h3>
+          <p>Mobile-first solution for Z with performant architecture.</p>
+          <a href="#" target="_blank" rel="noopener noreferrer">Live Demo</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>Contact</h2>
+      <p>Let’s build something great together.</p>
+      <form id="contactForm">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="4" placeholder="Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+      <p id="formStatus" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Your Name • Built with HTML/CSS/JS</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
